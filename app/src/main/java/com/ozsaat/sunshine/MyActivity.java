@@ -82,7 +82,7 @@ public class MyActivity extends ActionBarActivity {
                             R.id.list_item_forecast_textview,
                             weekForecast);
 
-            ListView listview = (ListView) rootView.findViewById(
+            ListView listView = (ListView) rootView.findViewById(
                     R.id.listview_forecast);
             listView.setAdapter(mForecastAdapter);
 
