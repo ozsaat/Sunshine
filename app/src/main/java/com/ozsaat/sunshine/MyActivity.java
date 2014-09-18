@@ -93,8 +93,6 @@ public class MyActivity extends ActionBarActivity {
                     R.id.listview_forecast);
             listView.setAdapter(mForecastAdapter);
 
-            return rootView;
-
             // These two need to be declared outside the try/catch
             // so that they can be closed in the finally block.
             HttpURLConnection urlConnection = null;
