@@ -75,7 +75,7 @@ public class ForecastFragment extends Fragment {
                         R.id.list_item_forecast_textview,
                         weekForecast);
 
-        View rootView = inflater.inflate(R.layout.fragment_my, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
         ListView listView = (ListView) rootView.findViewById(
                 R.id.listview_forecast);
@@ -85,7 +85,7 @@ public class ForecastFragment extends Fragment {
         return rootView;
 
     }
-
+// AsyncTask is shit
     public class FetchWeatherTask extends AsyncTask<Void, Void, Void> {
 
         private final String LOG_TAG = FetchWeatherTask.class.getSimpleName();
